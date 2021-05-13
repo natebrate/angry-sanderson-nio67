@@ -168,6 +168,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             name
+            text
             email
             profileImage {
               childImageSharp {

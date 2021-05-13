@@ -1,19 +1,18 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import IconXing from "./xing"
 import IconLinkedIn from "./linkedin"
 import IconMedium from "./medium"
 import IconGitHub from "./github"
 import IconBehance from "./behance"
 import IconExternal from "./external"
 import IconMail from "./mail"
+import IconInsta from "./Instagram"
+import IconTwitter from "./twitter"
 
 // Utility function to grab Icons by name
 const Icon = ({ name, color }) => {
   switch (name.toLowerCase()) {
-    case "xing":
-      return <IconXing color={color} />
     case "linkedin":
       return <IconLinkedIn color={color} />
     case "medium":
@@ -26,6 +25,10 @@ const Icon = ({ name, color }) => {
       return <IconExternal color={color} />
     case "mail":
       return <IconMail color={color} />
+    case "insta":
+      return <IconInsta color={color} />
+    case "twitter":
+      return <IconTwitter color={color} />
     default:
       return null
   }

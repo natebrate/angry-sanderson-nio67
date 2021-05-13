@@ -86,7 +86,8 @@ const Contact = ({ content }) => {
             fluid={frontmatter.profileImage.childImageSharp.fluid}
           />
           <div className="details">
-            <strong>{frontmatter.name}</strong>
+            <strong>{frontmatter.name}</strong> <br />
+            <strong>{frontmatter.text}</strong>
             <br />
             <a href={`mailto:${frontmatter.email}`}>
               <Underlining highlight>{frontmatter.email}</Underlining>
